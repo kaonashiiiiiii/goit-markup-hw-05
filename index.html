@@ -37,7 +37,7 @@
    <section class="first">
         <div class="container">
         <h1 class="header">Effective Solutions for Your Business</h1>
-        <button class="order-service-button" type="button">Order Service</button>
+        <button class="order-service-button" type="button" data-modal-open>Order Service</button>
         </div>
    </section>
    <!-- 2 article -->
@@ -588,5 +588,19 @@
         </ul>
         </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="modal-close-button" data-modal-close>
+                <svg class="icon-close-modal" width="8" height="8">
+                    <use xlink:href="#icon-close-modal">
+                        <symbol id="icon-close-modal" viewBox="0 0 32 32">
+                        <path d="M32 3.223l-3.223-3.223-12.777 12.777-12.777-12.777-3.223 3.223 12.777 12.777-12.777 12.777 3.223 3.223 12.777-12.777 12.777 12.777 3.223-3.223-12.777-12.777 12.777-12.777z"></path>
+                        </symbol>
+                    </use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
