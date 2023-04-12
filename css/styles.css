@@ -75,26 +75,28 @@ button {
     line-height: 24px;
     letter-spacing: 0.02em;
     color: #2E2F42;
+    position: relative;
     padding-right: 40px;
 }
-.paragraph::after {
+.studio-nav::after {
     content: "";
     display: block;
     background: #404BBF;
     border-radius: 2px;
-    width: 100%;
+    width: 48px;
     height: 4px;
-    bottom: 0;
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    position: absolute;
+    margin-top: 21px;
 }
-.paragraph:hover::after,
-.paragraph:focus::after {
-    opacity: 1;
-    visibility: visible;
+.portfolio-nav::after {
+    content: "";
+    display: block;
+    background: #404BBF;
+    border-radius: 2px;
+    width: 66px;
+    height: 4px;
+    position: absolute;
+    margin-top: 21px;
 }
 .address {
     font-style: normal;
@@ -119,6 +121,7 @@ button {
     background-position: center;
     background-size: cover;
     max-width: 1440px;
+    margin: 0 auto;
 }
 .header {
     font-weight: 700;
